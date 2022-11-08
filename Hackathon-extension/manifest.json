@@ -1,0 +1,36 @@
+{
+    "name": "Hackathon",
+    "version": "0.1.0",
+    "description": "Code with AI",
+    "permissions": ["storage", "tabs","contextMenus"],
+    "host_permissions": ["https://*/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/favicon-32x32.png",
+          "assets/favicon-16x16.png"
+        ],
+        "matches": ["https://*/*"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/favicon-16x16.png",
+        "24": "assets/favicon-32x32.png",
+        "32": "assets/favicon-32x32.png"
+      },
+      "default_title": "Hackathon",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+  }
+  

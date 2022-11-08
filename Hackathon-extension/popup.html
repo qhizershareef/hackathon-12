@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="popup.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-content">
+        <div class="headerContainer">
+            <div class="dropInput">
+                <input type="checkbox" id="enableDisable">
+                <label for="enableDisable">Enable/Disable</label>
+            </div>
+
+            <div class="icons">
+                <a href="options.html" target="_blank">Options</a>
+            </div>
+        </div>
+        <!-- <button
+        class="btn"
+        style="padding:10px; border:1px solid skyblue; color:white;background:black ;">
+            Productive
+        </button> -->
+        <div class="container">
+            <div class="inputArea">
+                <input type="text" id="input" placeholder="Enter your task">
+                <button id="addBtn">Add</button>
+            </div>
+            <div class="resultArea">
+                <textarea name="result" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <!-- <button id="start">start</button>
+        <button id="stop">stop</button> -->
+        <!-- color picker input -->
+        <!-- <input type="color" id="color_Picker" value="#000000"> -->
+    </div>
+</body>
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+    }
+    .main-content{
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+        margin: 0 auto;
+        background: black;
+        color: white;
+        border: 1px solid rgb(1, 54, 74);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 250px;
+        color: white;
+        border: 1px solid rgb(1, 54, 74);
+        border-radius: 5px;
+        gap: 100px;
+        margin-top: 20px;
+    }
+    .inputArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        margin-block: 10px;
+    }
+    .inputArea input{
+        width: 150px;
+        height: 30px;
+        border: 1px solid rgb(1, 54, 74);
+        border-radius: 5px;
+        padding: 5px;
+        outline: none;
+        margin-inline: 5px;
+    }
+    .inputArea button{
+        width: 50px;
+        height: 30px;
+        border: 1px solid rgb(1, 54, 74);
+        border-radius: 5px;
+        /* padding: 5px; */
+        outline: none;
+        cursor: pointer;
+        
+    }
+    .resultArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        margin-block: 10px;
+    }
+    .resultArea textarea{
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgb(1, 54, 74);
+        border-radius: 5px;
+        padding: 5px;
+        outline: none;
+        resize: none;
+    }
+
+    .headerContainer{
+        display: flex;
+        padding:10px;
+        justify-content: space-between;
+    }
+
+</style>
+</html>
